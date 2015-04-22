@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  <style>
+    .main {
+      float: left;
+      width: 100%;
+      background-color: yellow;
+    }
+    .sub {
+      float: left;
+      position: relative;
+      width: 190px;
+      margin-left: -190px;
+      background-color: red;
+    }
+    .extra {
+      float: left;
+      position: relative;
+      width: 190px;
+      margin-left: -390px;
+      background-color: blue;
+    }
+    .main-wrap {
+      margin-right: 400px;
+    }
+    .test-box {
+      padding: 10px;
+      height: 90px;
+      border: 1px dashed #aaa;
+    }
+  </style>
+</head>
+<body>
+  <div class="grid-c2">
+    <div class="main">
+      <div class="main-wrap">
+        <div class="test-box">
+          <span>main</span>
+        </div>
+      </div>
+    </div>
+    <div class="sub">
+      <div class="test-box">
+        <span>sub</span>
+      </div>
+    </div>
+    <div class="extra">
+      <div class="test-box">
+        <span>extra</span>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

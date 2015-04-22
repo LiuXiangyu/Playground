@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  <style>
+    .wrap {
+      margin: 20px 0;
+      position: relative;
+    }
+    .left {
+      position:absolute;
+      left: 0;
+      top: 0;
+      width: 200px;
+      background-color: red;
+    }
+    .right {
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 200px;
+      background-color: blue;
+    }
+    .center {
+      margin: 0 210px;
+      background-color: yellow;
+    }
+    .test-box {
+      height: 300px;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="left"><div class="test-box"><span>left</span></div></div>
+    <div class="center"><div class="test-box"><span>center</span></div></div>
+    <div class="right"><div class="test-box"><span>right</span></div></div>
+  </div>
+</body>
+</html>
