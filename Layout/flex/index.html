@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  <style>
+    .list {
+      display: -webkit-flex;
+      display: flex;
+      border: 1px solid red;
+      list-style: none;
+      padding: 0;
+    }
+    .item {
+      border: 1px solid #000;
+    }
+
+    #list2 {
+      flex-direction: row-reverse;
+    }
+
+    #list3 {
+      flex-direction: column;
+    }
+
+    #list4 {
+      flex-direction: column-reverse;
+    }
+
+    #list5 {
+      width: 300px;
+    }
+
+    #list5 > .item {
+      width: 100px;
+    }
+
+    #list6 {
+      width: 300px;
+      flex-wrap: wrap;
+    }
+
+    #list6 > .item {
+      width: 100px;
+    }
+
+    #list7 {
+      width: 300px;
+      flex-wrap: wrap-reverse;
+    }
+
+    #list7 > .item {
+      width: 100px;
+    }
+
+    #list8 {
+      height: 300px;
+      flex-flow: column-reverse wrap-reverse;
+    }
+
+    #list8 > .item {
+      height: 100px;
+    }
+
+
+  </style>
+</head>
+<body>
+  <ul id="list1" class="list">
+    <li class="item">123</li>
+    <li class="item">123</li>
+    <li class="item">123</li>
+    <li class="item">123</li>
+    <li class="item">123</li>
+  </ul>
+  <ul id="list2" class="list">
+    <li class="item">123a</li>
+    <li class="item">123b</li>
+    <li class="item">123c</li>
+    <li class="item">123d</li>
+    <li class="item">123e</li>
+  </ul>
+  <ul id="list3" class="list">
+    <li class="item">123a</li>
+    <li class="item">123b</li>
+    <li class="item">123c</li>
+    <li class="item">123d</li>
+    <li class="item">123e</li>
+  </ul>
+  <ul id="list4" class="list">
+    <li class="item">123a</li>
+    <li class="item">123b</li>
+    <li class="item">123c</li>
+    <li class="item">123d</li>
+    <li class="item">123e</li>
+  </ul>
+  <ul id="list5" class="list">
+    <li class="item">123a</li>
+    <li class="item">123b</li>
+    <li class="item">123c</li>
+    <li class="item">123d</li>
+    <li class="item">123e</li>
+  </ul>
+  <ul id="list6" class="list">
+    <li class="item">123a</li>
+    <li class="item">123b</li>
+    <li class="item">123c</li>
+    <li class="item">123d</li>
+    <li class="item">123e</li>
+  </ul>
+  <ul id="list7" class="list">
+    <li class="item">123a</li>
+    <li class="item">123b</li>
+    <li class="item">123c</li>
+    <li class="item">123d</li>
+    <li class="item">123e</li>
+  </ul>
+  <ul id="list8" class="list">
+    <li class="item">123a</li>
+    <li class="item">123b</li>
+    <li class="item">123c</li>
+    <li class="item">123d</li>
+    <li class="item">123e</li>
+  </ul>
+</body>
+</html>
