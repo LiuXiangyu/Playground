@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  <style>
+    .list {
+      border: 1px solid red;
+      list-style: none;
+    }
+    /* method1 */
+    .item {
+      float: left;
+      border: 1px solid #000;
+    }
+    /* method2 */
+    #list2 {
+      overflow: hidden;
+    }
+    /* method3 */
+    #list3:before,
+    #list3:after {
+      content: "";
+      display: table;
+    }
+    #list3:after {
+      clear: both;
+    }
+    #list3 {
+      zoom: 1; /* ie 6/7 */
+    }
+    /* method */
+    #list4:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    /* method */
+    #list5 {
+      min-height: contain-floats;
+    }
+  </style>
+</head>
+<body>
+  <ul id="list1" class="list">
+    <li class="item">item1</li>
+    <li class="item">item2</li>
+    <li class="item">item3</li>
+    <li class="item">item4</li>
+    <li class="item">item5</li>
+    <li style="clear:both;"></li>
+  </ul>
+  <ul id="list2" class="list">
+    <li class="item">item1</li>
+    <li class="item">item2</li>
+    <li class="item">item3</li>
+    <li class="item">item4</li>
+    <li class="item">item5</li>
+  </ul>
+  <ul id="list3" class="list">
+    <li class="item">item1</li>
+    <li class="item">item2</li>
+    <li class="item">item3</li>
+    <li class="item">item4</li>
+    <li class="item">item5</li>
+  </ul>
+  <ul id="list4" class="list">
+    <li class="item">item1</li>
+    <li class="item">item2</li>
+    <li class="item">item3</li>
+    <li class="item">item4</li>
+    <li class="item">item5</li>
+  </ul>
+  <ul id="list5" class="list">
+    <li class="item">item1</li>
+    <li class="item">item2</li>
+    <li class="item">item3</li>
+    <li class="item">item4</li>
+    <li class="item">item5</li>
+  </ul>
+</body>
+</html>
